@@ -19,8 +19,6 @@ stock IsDayIsToday(Timestamp:timestamp)
     TimeFormat(timestamp, HUMAN_DATE, output[0]);
     TimeFormat(today, HUMAN_DATE, output[1]);
 
-    printf("%s - %s", output[0], output[1]);
-
     if(!strcmp(output[0], output[1], true))
         return 1;
 
