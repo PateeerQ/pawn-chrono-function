@@ -49,6 +49,6 @@ stock TimestampToDate(Timestamp:timestamp, &year = 0, &month = 0, &day = 0, &hou
     minute = output[0] == '0' ? strval(output[1]) : strval(output);
 
     TimeFormat(timestamp, SECOND, output);
-    minute = output[0] == '0' ? strval(output[1]) : strval(output);
+    second = output[0] == '0' ? strval(output[1]) : strval(output);
     return 1;
 }
